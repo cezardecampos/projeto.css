@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <div>
+        <span border="5" 
+			width="10%" 
+			align="rigth">
+				<tr>
+				  <td colspan="2">
+					<p> <a 
+						style="color: rgb(13, 13, 14);"  
+						href="index.html">home</a></p>
+				  </td>
+				</tr>
+			  </span>
+              <style>
+                table {
+                  border-radius: 50%;
+                  width: 100%;
+                }
+                a, td {
+                  text-align: left;
+                  padding: 8px;
+                }
+                a {
+					margin: 10px;
+			padding: 50px;
+			box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.473);
+			max-width: 30px;
+			text-align: center;
+            color: #050505;
+            font-size: 30px;
+			font-family: arial-black;
+				}
+                a:hover {background-color: #eceaea;}
+                .box {
+                  
+                  width: 150px;
+                  height: 150px;
+                  margin-top: 10px;
+                  margin-right: 10px;
+                  margin-left: 10px;
+                  margin-bottom: 10px;
+                  background-color: #0e0d0d;
+                  border: 10px solid rgba(0, 0, 0, 0.349);
+                  text-align: center;
+                }
+
+                h2 {
+					margin: 10px;
+			padding: 50px;
+			max-width: 30px;
+			text-align: center;
+            color: #f7f5f5;
+            font-size: 30px;
+			font-family: arial-black;
+				}
+
+                span {
+
+float: center;
+}
+
+              </style>
+    </div>
+    <title>Carro em movimento</title>
+    <style>
+      
+      * {
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        overflow: hidden;
+        background-color: #f2f2f2;
+      }
+
+      .container {
+        position: relative;
+        height: 200px;
+        width: 570px;
+        background-color: #f2f2f2;
+      }
+
+      .car {
+        position: absolute;
+        top: 100px;
+        left: -50px;
+        height: 50px;
+        width: 100px;
+        background-color: #333;
+        border-radius: 10px;
+        animation: move 5s infinite linear;
+      }
+
+      .wheel {
+        position: absolute;
+        top: 150px;
+        height: 30px;
+        width: 30px;
+        background-color: black;
+        border-radius: 50%;
+        animation: rotate 1s infinite linear;
+      }
+
+      .wheel.left {
+        left: 20px;
+      }
+
+      .wheel.right {
+        right: 20px;
+      }
+
+      .person {
+        position: absolute;
+        top: 120px;
+        left: -50px;
+        height: 50px;
+        width: 50px;
+        background-color: salmon;
+        border-radius: 50%;
+        animation: run 4s infinite linear;
+      }
+
+      @keyframes move {
+        0% {
+          left: -50px;
+        }
+        100% {
+          left: 450px;
+        }
+      }
+
+      @keyframes rotate {
+        0% {
+          transform: rotate(0deg);
+        }
+        100% {
+          transform: rotate(360deg);
+        }
+      }
+
+      @keyframes run {
+        0% {
+          left: -50px;
+        }
+        100% {
+          left: 450px;
+        }
+      }
+    </style>
+  </head>
+  <h2>Pressione espaço</h2>
+	
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<link rel="stylesheet" href="estilo.css">
+
+  <body>
+    <div class="container">
+      <div class="car"></div>
+      <div class="wheel left"></div>
+      <div class="wheel right"></div>
+      <div class="person"></div>
+    </div>
+
+    <script>
+      // Adicione o JavaScript aqui
+      const car = document.querySelector(".car");
+      const wheels = document.querySelectorAll(".wheel");
+      const person = document.querySelector(".person");
+
+      function toggleAnimation() {
+        if (car.style.animationPlayState === "paused") {
+          car.style.animationPlayState = "running";
+          wheels.forEach((wheel) => {
+            wheel.style.animationPlayState = "running";
+          });
+          person.style.animationPlayState = "running";
+        } else {
+          car.style.animationPlayState = "paused";
+          wheels.forEach((wheel) => {
+            wheel.style.animationPlayState = "paused";
+          });
+          person.style.animationPlayState = "paused";
+        }
+      }
+
+      document.addEventListener("keydown", (event) => {
+        if (event.code === "Space") {
+          toggleAnimation();
+        }
+      });
+    </script>
+  </body>
+</html>
