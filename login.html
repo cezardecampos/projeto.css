@@ -38,7 +38,7 @@
     <style>
       
       body {
-			background-image: url('file:///C:/Users/cezar/OneDrive/%C3%81rea%20de%20Trabalho/projeto.html/Design%20sem%20nome%20(1).png');
+			background-color: azure;
 		    background-repeat: no-repeat;
 			background-attachment: fixed;
 			background-size: 100%;
@@ -46,11 +46,34 @@
     </style>
   </head>
   <body>
+    <script type="module">
+      // Import the functions you need from the SDKs you need
+      import { initializeApp } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-app.js";
+      import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-analytics.js";
+      // TODO: Add SDKs for Firebase products that you want to use
+      // https://firebase.google.com/docs/web/setup#available-libraries
+      
+      // Your web app's Firebase configuration
+      // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+      const firebaseConfig = {
+        apiKey: "AIzaSyBl-DmMjiwkqh78XuG4Kxh5xpxSMxICAgo",
+        authDomain: "projectsitecar.firebaseapp.com",
+        projectId: "projectsitecar",
+        storageBucket: "projectsitecar.appspot.com",
+        messagingSenderId: "110017354892",
+        appId: "1:110017354892:web:872e6fa58509933c4c2fa9",
+        measurementId: "G-TYYDKRMB49"
+      };
+      
+      // Initialize Firebase
+      const app = initializeApp(firebaseConfig);
+      const analytics = getAnalytics(app);
+      </script>
     <form>
-      <label for="nome">Nome:</label>
-      <input type="text" id="nome" name="nome"><br><br>
       <label for="email">E-mail:</label>
       <input type="email" id="email" name="email"><br><br>
+      <label for="senha">Senha:</label>
+      <input type="text" id="senha" name="senha"><br><br>
       <label for="mensagem">Mensagem:</label>
       <textarea id="mensagem" name="mensagem"></textarea><br><br>
       <input type="submit" value="Enviar">

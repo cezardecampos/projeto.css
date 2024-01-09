@@ -3,9 +3,9 @@
 	<head>
 		<div id="cabecalho">
 			
-			<img src="file:///C:/Users/cezar/OneDrive/%C3%81rea%20de%20Trabalho/projeto.css/imagens/1702328057774.jpg" 
-			width="100px " 
-			border="6px" 
+			<img src="file:///C:/Users/cezar/OneDrive/%C3%81rea%20de%20Trabalho/projeto.css/imagens/Car%20customers.png" 
+			width="150px " 
+			 
 			align="left">
 			</div>
 			<span border="5" 
@@ -14,7 +14,7 @@
 				<tr>
 				  <td colspan="2">
 					<p> <a 
-						style="color: rgb(27, 26, 49);"  
+						style="color: rgb(255, 255, 255);"  
 						href="animation.html">Animação</a></p>
 				  </td>
 				</tr>
@@ -25,7 +25,7 @@
 				<tr>
 				  <td colspan="2">
 					<p> <a 
-						style="color: rgb(27, 26, 49);"  
+						style="color: rgb(255, 255, 255);"  
 						href="orçamento.html">Orçamento</a></p>
 				  </td>
 				</tr>
@@ -35,12 +35,25 @@
 			  align="rigth">
 				<tr>
 				  <td colspan="2">
-					<p> <a style="color: rgb(27, 26, 49);"
+					<p> <a style="color: rgb(255, 255, 255);"
 						 href="login.html">Login</a></p>
 				  </td>
 				</tr>
 			  </span>
-        
+			  <div>
+				<div style="
+				 width: 100%;
+				 height: 100vh; 
+				 background-image: url(file:///C:/Users/cezar/OneDrive/%C3%81rea%20de%20Trabalho/projeto.css/imagens/WhatsApp%20Image%202024-01-09%20at%2000.07.00.jpeg); 
+				 background-repeat: no-repeat;
+				  background-size: 100%;
+				   display: flex;
+				    justify-content: center;
+					 align-items: center;
+					  flex-direction: center;">
+					  
+				</div>
+			  </div>
         <style>
 
 table {
@@ -52,15 +65,15 @@ table {
                   padding: 8px;
                 }
                 a {
-					margin: 10px;
+			margin: 10px;
 			padding: 10px;
 			box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.473);
 			max-width: 300px;
 			text-align: center;
             color: #050505;
-			font-family: arial-black;
+			font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 				}
-                a:hover {background-color: #979797;}
+                a:hover {background-color: #001aff;}
                 .box {
                   
                   width: 150px;
@@ -76,23 +89,27 @@ table {
                 }
 			
         body {
-          color: rgb(12, 12, 12);
+          color: rgb(255, 255, 255);
 		  text-align: center;
-		  font-family: Arial, Helvetica, sans-serif;
-		  text-shadow: 2px 2px 4px #707070;
+		  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+		  
 		  
 		  
         }
 		span {
 
 			float: right;
+			margin: 40px;
+			scroll-padding-inline-end: 10px;
 		}
 	
         </style>
         </head>
 <head>
-	<title>Cultura de carros modificados no Brasil</title>
 	
+	<h1 style="color: white; padding-top: 1px; background-color: blue;">
+		Car Customers
+	</h1>
 	
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -108,13 +125,13 @@ table {
 		}
         
 		body {
-			background-image: url('file:///C:/Users/cezar/OneDrive/%C3%81rea%20de%20Trabalho/projeto.html/Design%20sem%20nome%20(1).png');
+			background-color: rgb(0, 0, 0);
 		    background-repeat: no-repeat;
 			background-attachment: fixed;
 			background-size: 100%;
 		}
 		.container {
-			background-color: black;
+			background-color: rgb(0, 0, 0);
 			display: flex;
 			flex-wrap: wrap;
 			justify-content: center;
@@ -124,7 +141,7 @@ table {
 		.card {
 			margin: 10px;
 			padding: 10px;
-			box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.205);
+			box-shadow: 0 1px 8px 0 rgb(255, 255, 255);
 			max-width: 300px;
 			text-align: center;
 			font-family: arial-black;
@@ -146,34 +163,59 @@ table {
 </head>
 
 <body>
+	<script type="module">
+		// Import the functions you need from the SDKs you need
+		import { initializeApp } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-app.js";
+		import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-analytics.js";
+		// TODO: Add SDKs for Firebase products that you want to use
+		// https://firebase.google.com/docs/web/setup#available-libraries
+	  
+		// Your web app's Firebase configuration
+		// For Firebase JS SDK v7.20.0 and later, measurementId is optional
+		const firebaseConfig = {
+		  apiKey: "AIzaSyBl-DmMjiwkqh78XuG4Kxh5xpxSMxICAgo",
+		  authDomain: "projectsitecar.firebaseapp.com",
+		  projectId: "projectsitecar",
+		  storageBucket: "projectsitecar.appspot.com",
+		  messagingSenderId: "110017354892",
+		  appId: "1:110017354892:web:872e6fa58509933c4c2fa9",
+		  measurementId: "G-TYYDKRMB49"
+		};
+	  
+		// Initialize Firebase
+		const app = initializeApp(firebaseConfig);
+		const analytics = getAnalytics(app);
+	  </script>
+
 	
-	<h1>Cultura de carros modificados no Brasil</h1>
 	<div class="container">
 		<div class="card">
-			<img src="file:///C:/Users/cezar/OneDrive/%C3%81rea%20de%20Trabalho/projeto.html/30334a665771a387aac556de2cd5cad3.jpg" alt="Lancer Evolution">
-			<p>Este é um Mitsubishi Lancer Evolution modificado com um kit de carroceria personalizado. </p>
+			<img src="file:///C:/Users/cezar/OneDrive/%C3%81rea%20de%20Trabalho/projeto.html/images.jpg" alt="Lancer Evolution">
+			<p>Este é outro Mitsubishi Lancer Evolution modificado com um kit de carroceria personalizado.</p>
+			<p>Fonte: <a href="https://www.instagram.com/p/Cr6xqk0LQnd/?img_index=1">Instagram  @cezardecampos</a></p>
+		</div>
+		<div class="card">
+			<img src="file:///C:/Users/cezar/OneDrive/%C3%81rea%20de%20Trabalho/projeto.html/images.jpg" alt="Lancer Evolution">
+			<p>Este é outro Mitsubishi Lancer Evolution modificado com um kit de carroceria personalizado.</p>
 			<p>Fonte: <a href="https://www.instagram.com/p/Cr6xqk0LQnd/?img_index=1">Instagram  @cezardecampos</a></p>
 		</div>
 		<div class="card">
 			<img src="file:///C:/Users/cezar/OneDrive/%C3%81rea%20de%20Trabalho/projeto.html/images.jpg" alt="Lancer Evolution">
 			<p>Este é outro Mitsubishi Lancer Evolution modificado com um kit de carroceria personalizado.</p>
 			<p>Fonte: <a href="https://www.instagram.com/p/Cr6xqk0LQnd/?img_index=1">Instagram  @cezardecampos</a></p>
-		</div><div class="card">
-			<img src="file:///C:/Users/cezar/OneDrive/%C3%81rea%20de%20Trabalho/projeto.html/images.jpg" alt="Lancer Evolution">
-			<p>Este é outro Mitsubishi Lancer Evolution modificado com um kit de carroceria personalizado.</p>
-			<p>Fonte: <a href="https://www.instagram.com/p/Cr6xqk0LQnd/?img_index=1">Instagram  @cezardecampos</a></p>
-		</div><div class="card">
-			<img src="file:///C:/Users/cezar/OneDrive/%C3%81rea%20de%20Trabalho/projeto.html/images.jpg" alt="Lancer Evolution">
-			<p>Este é outro Mitsubishi Lancer Evolution modificado com um kit de carroceria personalizado.</p>
-			<p>Fonte: <a href="https://www.instagram.com/p/Cr6xqk0LQnd/?img_index=1">Instagram  @cezardecampos</a></p>
-		
-		</div><div class="card">
+		</div>
+		<div class="card">
 			<img src="file:///C:/Users/cezar/OneDrive/%C3%81rea%20de%20Trabalho/projeto.html/images.jpg" alt="Lancer Evolution">
 			<p>Este é outro Mitsubishi Lancer Evolution modificado com um kit de carroceria personalizado.</p>
 			<p>Fonte: <a href="https://www.instagram.com/p/Cr6xqk0LQnd/?img_index=1">Instagram  @cezardecampos</a></p>
 		</div>
 		<div class="card">
-			<img src="file:///C:/Users/cezar/OneDrive/%C3%81rea%20de%20Trabalho/projeto.html/transferir.jpg" alt="Lancer Evolution">
+			<img src="file:///C:/Users/cezar/OneDrive/%C3%81rea%20de%20Trabalho/projeto.html/images.jpg" alt="Lancer Evolution">
+			<p>Este é outro Mitsubishi Lancer Evolution modificado com um kit de carroceria personalizado.</p>
+			<p>Fonte: <a href="https://www.instagram.com/p/Cr6xqk0LQnd/?img_index=1">Instagram  @cezardecampos</a></p>
+		</div>
+		<div class="card">
+			<img src="file:///C:/Users/cezar/OneDrive/%C3%81rea%20de%20Trabalho/projeto.html/images.jpg" alt="Lancer Evolution">
 			<p>Este é um terceiro Mitsubishi Lancer Evolution modificado com um kit de carroceria personalizado.</p>
 			<p>Fonte: <a href="https://www.instagram.com/p/Cr6xqk0LQnd/?img_index=1">Instagram  @cezardecampos </a><!DOCTYPE html>
 				<html>
